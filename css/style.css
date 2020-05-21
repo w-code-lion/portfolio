@@ -1,36 +1,6 @@
-@font-face {
-	font-family: 'Conv_Manropesemibold';
-	src: url('../css/fonts/manrope-semibold/Manropesemibold.eot');
-	src: local('☺'), url('../css/fonts/manrope-semibold/Manropesemibold.woff') format('woff'), url('../css/fonts/manrope-semibold/Manropesemibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('../css/fonts/manrope-extrabold/Manrope-ExtraBold.ttf');
-	src: local('☺'), url('../css/fonts/manrope-extrabold/Manrope-ExtraBold.woff') format('woff'), url('fonts/manrope-extrabold/Manrope-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-  }
-
-@font-face {
-	font-family: 'Conv_Inter-Regular';
-	src: url('fonts/inter-regular/Inter-Regular.eot');
-	src: local('☺'), url('fonts/inter-regular/Inter-Regular.woff') format('woff'), url('fonts/inter-regular/Inter-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Conv_Inter-Bold';
-	src: url('fonts/inter-bold/Inter-Bold.eot');
-	src: local('☺'), url('fonts/inter-bold/Inter-Bold.woff') format('woff'), url('fonts/inter-bold/Inter-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
 
 /* --------------- reset.css --------------- */
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -86,6 +56,9 @@ nav ul {
 /* --------------- /reset.css --------------- */
 
 /* --------------- базовые настройки ---------*/
+html, body {
+	overflow-x: hidden;
+}
 html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
@@ -94,9 +67,11 @@ body {
 	text-align: left;
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
-    font-family: 'Conv_Inter-Regular';
-    overflow-x:hidden;
-}
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+   /*font-family: 'Manrope', sans-serif;*/
+   }
 a, a:visited { /* порядок правил для ссылок имеет значение */
 	color: #fff;
 	text-decoration: none;
@@ -129,6 +104,7 @@ img{
 .header {
 	background: #16171A;
 	padding-bottom: 140px;
+	margin-bottom: -1px;
 }
 
 .container {
@@ -147,7 +123,8 @@ img{
 
 .logo {
     font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
 }
 
 .logo:hover {
@@ -173,7 +150,8 @@ img{
 
 .menu__link {
 	font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
 }
 
 /* --------------- Mobile navigation button ----------- */
@@ -263,6 +241,7 @@ img{
     z-index: 9;
     display:block;
     position: absolute;
+    position: fixed;
     right: -250px;
     width: 150px;
     padding: 20px 45px 20px 45px;
@@ -273,16 +252,10 @@ img{
     top: 60px;
     height: 350px;
 }
-.mobile__nav-swipe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .mobile-nav--active {
   right: 15px;
+  position: absolute;
 }
 
 
@@ -311,7 +284,8 @@ img{
 .name {
 	color: #fff;
 	font-size: 3.5em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 10px;
 }
 
@@ -333,7 +307,8 @@ img{
 
 a.link__telegram {
 	color: #16171A;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 54px 15px 28px;
 	display: inline-block;
 }
@@ -345,7 +320,7 @@ a.link__telegram {
 }
 
 a.link__telegram:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .response__time {
@@ -379,7 +354,8 @@ a.link__telegram:hover {
 
 .approach {
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 3px;
 }
 
@@ -388,7 +364,8 @@ a.link__telegram:hover {
 }
 
 .weight {
-font-family: 'Conv_Inter-Bold';
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
 }
 
 .link__approach {
@@ -409,7 +386,8 @@ font-family: 'Conv_Inter-Bold';
 
 a.link__down {
 	color: #fff;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 54px 15px 28px;
 	display: inline-block;
 }
@@ -421,7 +399,7 @@ a.link__down {
 }
 
 a.link__down:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
@@ -435,7 +413,8 @@ a.link__down:hover {
 
 a.link__me {
 	color: #16171A;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 56px 15px 30px;
 	display: inline-block;
 }
@@ -447,7 +426,7 @@ a.link__me {
 }
 
 a.link__me:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .my__strategy {
@@ -472,7 +451,8 @@ a.link__me:hover {
 
 .section__item {
 	font-size: 2em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 3px;
 }
 
@@ -499,7 +479,8 @@ a.link__me:hover {
 .proekt {
 	font-size: 3em;
 	color: #fff;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 
 .big__project {
@@ -518,14 +499,16 @@ a.link__me:hover {
 .clix {
 	color: #fff;
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: -10px;
 }
 
 .text__applications {
 	color: #fff;
 	font-size: 1.5em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 23px;
 }
 
@@ -553,7 +536,8 @@ a.link__me:hover {
 .name__project {
 	color: #fff;
 	font-size: 1.25em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 3px;
 }
 
@@ -572,7 +556,8 @@ a.link__me:hover {
 
 .work__request {
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	width: 78.8%;
 	line-height: 1.4;
 	margin-bottom: 30px;
@@ -608,7 +593,8 @@ a.link__me:hover {
 
 a.contact__link {
 	font-size: 1.5em;
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
     color: #16171A;
     text-decoration-line: underline;
 }

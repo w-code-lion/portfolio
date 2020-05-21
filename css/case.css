@@ -1,34 +1,3 @@
-@font-face {
-	font-family: 'Conv_Manropesemibold';
-	src: url('../css/fonts/manrope-semibold/Manropesemibold.eot');
-	src: local('☺'), url('../css/fonts/manrope-semibold/Manropesemibold.woff') format('woff'), url('../css/fonts/manrope-semibold/Manropesemibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('../css/fonts/manrope-extrabold/Manrope-ExtraBold.ttf');
-	src: local('☺'), url('../css/fonts/manrope-extrabold/Manrope-ExtraBold.woff') format('woff'), url('fonts/manrope-extrabold/Manrope-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-  }
-
-@font-face {
-	font-family: 'Conv_Inter-Regular';
-	src: url('fonts/inter-regular/Inter-Regular.eot');
-	src: local('☺'), url('fonts/inter-regular/Inter-Regular.woff') format('woff'), url('fonts/inter-regular/Inter-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Conv_Inter-Bold';
-	src: url('fonts/inter-bold/Inter-Bold.eot');
-	src: local('☺'), url('fonts/inter-bold/Inter-Bold.woff') format('woff'), url('fonts/inter-bold/Inter-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
 
 /* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
@@ -94,15 +63,15 @@ body {
 	text-align: left;
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
-    font-family: 'Conv_Inter-Regular';
+     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+   /*font-family: 'Manrope', sans-serif;*/
     overflow-x:hidden;
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #16171A;
 	text-decoration: none;
 }
 a:hover {
-	
 	text-decoration:underline;
 }
 a:focus, a:active {
@@ -132,6 +101,7 @@ img{
 	background-size: cover;
 	padding-bottom: 234px;
 	position: relative;
+	margin-bottom: -1px;
 }
 
 .container {
@@ -150,7 +120,9 @@ img{
 
 .logo {
     font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+     font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #16171A;
 }
 
 .logo:hover {
@@ -176,7 +148,9 @@ img{
 
 .menu__link {
 	font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+     font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #16171A;
 }
 
 /* --------------- Mobile navigation button ----------- */
@@ -266,28 +240,22 @@ img{
     z-index: 9;
     display:block;
     position: absolute;
+    position: fixed;
     right: -250px;
     width: 150px;
     padding: 20px 45px 20px 45px;
-    background-color: rgba(221, 221, 219, .9);
+    background-color: rgba(53, 55, 62, .9);
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
     top: 60px;
     height: 350px;
 }
-.mobile__nav-swipe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .mobile-nav--active {
   right: 15px;
+  position: absolute;
 }
-
 
 .block__right-mobile {
   display: -webkit-box;
@@ -301,6 +269,10 @@ img{
   z-index: 1;
 }
 
+.link__mobile {
+	color: #fff;
+}
+
 .header__bottom {
 	overflow: hidden;
 	    margin: 85px 0 80px 0;
@@ -308,12 +280,14 @@ img{
 
 .zuu {
 	font-size: 3.5em;
-	font-family: 'Manrope';
+	 font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 
 .platforma {
 	font-size: 1.5em;
-	font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 15px;
 }
 
@@ -332,7 +306,8 @@ img{
 a.link__prototype {
 	color: #16171A;
 	background: #fff;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 56px 15px 30px;
 	display: inline-block;
 }
@@ -344,7 +319,7 @@ a.link__prototype {
 }
 
 a.link__prototype:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .project__top {
@@ -371,7 +346,8 @@ a.link__prototype:hover {
 
 .participants__item {
 	font-size: 1.25em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 5px;
 }
 
@@ -420,7 +396,8 @@ a.link__prototype:hover {
 }
 
 .obzor {
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	font-size: 3em;
 	max-width: 963px;
 	margin: 0 auto;
@@ -432,7 +409,8 @@ a.link__prototype:hover {
 }
 
 .motiv {
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	font-size: 2em;
 	max-width: 962px;
 	margin: 7px auto 0 auto;
@@ -459,7 +437,8 @@ a.link__prototype:hover {
 }
 
 .idea {
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	font-size: 2em;
 	margin-bottom: 6px;
 }
@@ -480,17 +459,20 @@ a.link__prototype:hover {
 
 .study__user {
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 
 .online__opros {
 	font-size: 2em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-top: 10px;
 }
 
 .opros__respondent {
-    font-family: 'Conv_Inter-Bold';
+     font-family: 'Inter', sans-serif;
+   font-weight: 700;
     margin-top: 8px;
 }
 
@@ -517,7 +499,8 @@ a.link__prototype:hover {
 
 
 .motiv__two {
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	font-size: 2em;
 	margin: 7px 0 0 0;
 }
@@ -552,7 +535,8 @@ a.link__prototype:hover {
 
 a.link__telegram {
 	color: #16171A;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 54px 15px 28px;
 	display: inline-block;
 }
@@ -564,7 +548,7 @@ a.link__telegram {
 }
 
 a.link__telegram:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .down {
@@ -578,7 +562,8 @@ a.link__telegram:hover {
 
 a.link__down {
 	color: #fff;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 54px 15px 28px;
 	display: inline-block;
 }
@@ -590,7 +575,7 @@ a.link__down {
 }
 
 a.link__down:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
@@ -604,7 +589,8 @@ a.link__down:hover {
 
 a.link__me {
 	color: #16171A;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	padding: 15px 56px 15px 30px;
 	display: inline-block;
 }
@@ -616,7 +602,7 @@ a.link__me {
 }
 
 a.link__me:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .project {
@@ -643,7 +629,8 @@ a.link__me:hover {
 .proekt {
 	font-size: 3.5em;
 	color: #fff;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 
 .big__project {
@@ -662,14 +649,16 @@ a.link__me:hover {
 .clix {
 	color: #fff;
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: -10px;
 }
 
 .text__applications {
 	color: #fff;
 	font-size: 1.5em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 23px;
 }
 
@@ -699,7 +688,8 @@ a.link__me:hover {
 .name__project {
 	color: #fff;
 	font-size: 1.25em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	margin-bottom: 3px;
 }
 
@@ -718,7 +708,8 @@ a.link__me:hover {
 
 .work__request {
 	font-size: 3em;
-	font-family: 'Manrope';
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 	width: 78.8%;
 	line-height: 1.4;
 	margin-bottom: 30px;
@@ -754,7 +745,8 @@ a.link__me:hover {
 
 a.contact__link {
 	font-size: 1.5em;
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
     color: #16171A;
     text-decoration-line: underline;
 }
@@ -785,13 +777,15 @@ a.contact__link:hover {
 
 .menu__link-footer {
 	font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
     color: #fff;
 }
 
 .menu__link-footer:hover {
 	font-size: 1em;
-    font-family: 'Conv_Manropesemibold';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -929,7 +923,8 @@ a.contact__link:hover {
 }
      .zuu {
     font-size: 3em;
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 
 .arenda {

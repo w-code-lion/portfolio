@@ -63,7 +63,7 @@ body {
 	text-align: left;
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
-    font-family: 'Inter', sans-serif;
+     font-family: 'Inter', sans-serif;
     font-weight: 400;
    /*font-family: 'Manrope', sans-serif;*/
     overflow-x:hidden;
@@ -339,7 +339,8 @@ a.link__me:hover {
 
 .project {
 	background:  #16171A;
-	padding: 0 0 130px 0;
+	padding: 0 0 139px 0;
+	margin-bottom: 150px;
 }
 
 .block__project {
@@ -351,9 +352,6 @@ a.link__me:hover {
 }
 
 .top__project {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin-bottom: 23px;
 }
 
@@ -364,38 +362,11 @@ a.link__me:hover {
     font-weight: 800;
 }
 
-.big__project {
-	display: flex;
-	align-items: center;
-}
-
-.big__project-foto {
-	margin-right: 40px;
-}
-
-.text__project {
-	width: 41%;
-}
-
-.clix {
+.text__about {
 	color: #fff;
-	font-size: 3em;
-	font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-	margin-bottom: -10px;
-}
-
-.text__applications {
-	color: #fff;
-	font-size: 1.5em;
-	font-family: 'Manrope', sans-serif;
-    font-weight: 800;
+	line-height: 1.6;
+	max-width: 760px;
 	margin-bottom: 23px;
-}
-
-.text__school {
-	color: #fff;
-	font-size: 1.25em;
 }
 
 .block__bottom-project {
@@ -403,30 +374,223 @@ a.link__me:hover {
 	display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .little__project {
 	display: flex;
 	flex-direction: column;
-	width: 31.1%;
-	margin-bottom: 40px;
+	width: 31.7%;
+	margin-bottom: 25px;
 }
 
-.link__project {
-	margin-bottom: 24px;
+.img__project {
+    margin-bottom: 6px;
 }
 
 .name__project {
 	color: #fff;
-	font-size: 1.25em;
-	font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-	margin-bottom: 3px;
+    font-size: 0.75em;
 }
 
 .text__bottom-project {
 	color: #fff;
 	line-height: 1.6;
+}
+
+.question__answer {
+	max-width: 960px;
+	margin: 0 auto 70px auto;
+	padding: 0 10px 30px 10px;
+	border-bottom: 1px solid #919399;
+}
+
+.paragraph__content {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.pod__paragraph {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	font-size: 2em;
+	margin-bottom: 7px;
+}
+
+.text__content {
+	line-height: 1.6;
+	margin-bottom: 45px;
+}
+
+.question__bottom {
+	padding: 5px 0 0 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.strengths__block {
+	width: 48%;
+}
+
+.weaknesses__block {
+	width: 48%;
+}
+
+.skills {
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+
+.skills__block {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 0 25px 0;
+}
+
+.skills__section {
+	width: 48.3%;
+	margin-bottom: 55px;
+}
+
+.skills__spisok {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.skills__spisok-item {
+	line-height: 1.7;
+	margin: 0 15px 0 0;
+	padding: 0 10px 0 0;
+}
+
+.line {
+	max-width: 960px;
+	margin: 0 auto;
+    height: 1px;
+    background: #919399;
+    overflow: hidden;
+}
+
+.experience {
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+
+.exper {
+	margin-left: -1px;
+}
+
+.big__experience {
+	margin-bottom: 60px;
+}
+
+.block__experience {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 20px 0;
+}
+
+.block__experience-left {
+	overflow: hidden;
+	width: 31.2%;
+	margin-right: 3.2%;
+}
+
+.experience__paragraph {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.experience__podparagraph {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	font-size: 1em;
+	margin-bottom: 3px;
+}
+
+.date {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+	font-size: 1em;
+	color: #818799;
+}
+
+.block__experience-right {
+	overflow: hidden;
+	width: 65.6%;
+	padding: 57px 0 0 0;
+}
+
+.experience__right-paragraph {
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	font-size: 1.25em;
+	margin: 0 0 10px 0;
+}
+
+.experience__right-text {
+	line-height: 1.6;
+	margin: 0 0 20px 0;
+}
+
+.education {
+	margin-bottom: 90px;
+}
+
+
+.experience__right-two {
+	margin-top: -62px;
+}
+
+.spisok__experience {
+	line-height: 1.6;
+}
+
+.block__experience-two {
+	margin-bottom: 35px;
+}
+
+.download__resume {
+	background-color: #16171A;
+	text-align: center;
+	padding: 77px 0;
+}
+
+
+.download__button {
+	background: #fff;
+	border: 1px solid #16171A;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+
+a.download__me {
+	color: #16171A;
+	font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+	padding: 15px 55px 15px 30px;
+	display: inline-block;
+}
+
+.download__right {
+	position: absolute;
+	top: 22px;
+	right: 32px;
+	transform: rotate(90deg);
+}
+
+a.download__me:hover {
+	text-decoration: none;
 }
 
 .contact {
@@ -510,20 +674,16 @@ a.contact__link:hover {
 	color: #919399;
 }
 
-@media (max-width: 1028px) {
-	.big__project-foto {
-    margin-right: 20px;
-    width: 46%;
-}
-
-.text__project {
-    width: 52%;
-}
-}
 
 @media (max-width: 960px) {
 .block__top-project {
     margin-bottom: 20px;
+}
+
+.little__project {
+    display: flex;
+    flex-direction: column;
+    width: 48.5%;
 }
 
 .work__request{
@@ -537,35 +697,15 @@ a.contact__link:hover {
 
 @media (max-width: 865px) {
 
-.big__project {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.big__project-foto {
-    margin-right: 0;
-    width: 100%;
-}
-
 .project-foto {
 	width: 100%;
 }
 
-.text__project {
-    width: 94%;
-
-}
 
 
 .block__bottom-project {
 	display: flex;
 	flex-wrap: wrap;
-}
-.little__project {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
 }
 
 }
@@ -593,26 +733,10 @@ a.contact__link:hover {
     font-size: 3em;
 }
 
-.big__project {
-    display: flex;
-    flex-direction: column;
-}
-
-.big__project-foto {
-    margin-right: 0;
-    width: 100%;
-}
-
 .project-foto {
 	width: 100%;
 }
 
-.text__project {
-    width: 100%;
-}
-.clix {
-	font-size: 2.5em;
-}
 
 .block__top-project {
     margin-bottom: 45px;
