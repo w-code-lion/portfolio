@@ -403,16 +403,15 @@ a.link__me:hover {
 
 .question__answer {
 	max-width: 960px;
-	margin: 0 auto 70px auto;
+	margin: 0 auto 50px auto;
 	padding: 0 10px 30px 10px;
-	border-bottom: 1px solid #919399;
 }
 
 .paragraph__content {
 	font-family: 'Manrope', sans-serif;
     font-weight: 800;
 	font-size: 3em;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .pod__paragraph {
@@ -432,6 +431,7 @@ a.link__me:hover {
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 .strengths__block {
@@ -528,7 +528,7 @@ a.link__me:hover {
 .block__experience-right {
 	overflow: hidden;
 	width: 65.6%;
-	padding: 57px 0 0 0;
+	padding: 49px 0 0 0;
 }
 
 .experience__right-paragraph {
@@ -549,7 +549,7 @@ a.link__me:hover {
 
 
 .experience__right-two {
-	margin-top: -62px;
+	margin-top: -53px;
 }
 
 .spisok__experience {
@@ -677,6 +677,16 @@ a.contact__link:hover {
 
 
 @media (max-width: 960px) {
+
+.proekt {
+    margin: 5px 0 15px 0;
+}
+
+
+.text__content {
+    margin-bottom: 35px;
+}
+
 .block__top-project {
     margin-bottom: 20px;
 }
@@ -687,12 +697,26 @@ a.contact__link:hover {
     width: 48.5%;
 }
 
+.block__experience-left {
+     margin-right: 0; 
+     width: 31.2%;
+}
+
+.block__experience-right {
+	width: 68.8%;
+}
+
+.education {
+    margin-bottom: 0px;
+}
+
 .work__request{
 	width: 98.8%;
 }
 
 .project {
     padding: 0 0 40px 0;
+    margin-bottom: 80px;
 }
 }
 
@@ -743,6 +767,108 @@ a.contact__link:hover {
     margin-bottom: 45px;
 }
 
+
+.paragraph__content {
+	font-size: 2.5em;
+}
+
+.pod__paragraph {
+	font-size: 1.5em;
+}
+
+.project {
+    padding: 0 0 40px 0;
+    margin-bottom: 40px;
+}
+
+.question__bottom {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.question__answer {
+	margin-bottom: 20px;
+}
+
+.strengths__block {
+	width: 100%;
+}
+
+.weaknesses__block {
+    width: 100%;
+}
+
+.text__content {
+    margin-bottom: 32px;
+}
+
+.skills {
+	margin-bottom: 40px;
+}
+
+.skills__block {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0;
+}
+
+.skills__section {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.block__experience {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.paragraph__content {
+    margin-bottom: 15px;
+}
+
+.block__experience-left {
+	width: 100%;
+}
+
+
+.block__experience-right {
+    overflow: hidden;
+    width: 100%;
+    padding: 17px 0 0 0;
+}
+
+.experience__right-text {
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+.big__experience {
+    margin-bottom: 10px;
+}
+
+.experience {
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.experience__paragraph {
+	margin-bottom: 8px;
+}
+
+.experience__right-two {
+     margin-top: 0; 
+}
+
+.spisok__experience {
+    margin-bottom: 25px;
+}
+
+.education {
+    margin-bottom: 30px;
+}
+
 .work__request {
 	font-size: 2.5em;
 	line-height: 1.3;
@@ -778,7 +904,7 @@ a.contact__link:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .bottom__images {
@@ -786,8 +912,24 @@ a.contact__link:hover {
 }
 
 .project {
-	padding-bottom: 42px;
+	padding-bottom: 23px;
 }
+
+.question__answer {
+    margin-bottom: 10px;
+}
+
+
+.experience__right-text {
+	margin: 0 0 0 0;
+}
+
+
+
+
+
+
+
 
 .menu__list-item {
     margin-bottom: 10px;
